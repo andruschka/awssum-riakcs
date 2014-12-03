@@ -1,6 +1,6 @@
 {
   "name": "awssum-riakcs",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AwsSum plugin for riakCS, based on awssum-amazon-s3.",
   "main": "awssum-riakcs.js",
   "directories": {
