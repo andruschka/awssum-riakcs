@@ -14,7 +14,7 @@ Init riakCS and list all your buckets:
 
 ```
 var fmt = require('fmt');
-var amazonS3 = require('awssum-amazon-s3');
+var amazonS3 = require('awssum-riakcs');
 
 var riakCS = new amazonS3.S3({
     'accessKeyId'     : process.env.ACCESS_KEY_ID,
