@@ -24,7 +24,6 @@ var dateformat = require('dateformat');
 var awssum = require('awssum');
 var amazon = require('awssum-amazon');
 var operations = require('./config.js');
-var epOpts = require('./riakcs.json')
 // --------------------------------------------------------------------------------------------------------------------
 // package variables
 
