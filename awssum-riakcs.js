@@ -11,7 +11,7 @@
 
 // --------------------------------------------------------------------------------------------------------------------
 // requires
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 // built-ins
 var util = require('util');
 var crypto = require('crypto');

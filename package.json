@@ -1,18 +1,20 @@
 {
   "name": "awssum-riakcs",
+  "version": "1.0.0",
   "description": "AwsSum plugin for riakCS, based on awssum-amazon-s3.",
-  "version": "1.5.0",
   "main": "awssum-riakcs.js",
-  "engines": {
-    "node": ">= 0.6.0"
+  "directories": {
+    "doc": "docs",
+    "example": "examples",
+    "test": "test"
   },
   "peerDependencies": {
     "awssum-amazon": "~1"
   },
   "dependencies": {
-    "data2xml": "0.8.x",
-    "underscore": "1.4.x",
-    "dateformat": "1.0.4-1.2.3"
+    "underscore": "^1.4.4",
+    "data2xml": "^0.8.1",
+    "dateformat": "^1.0.4-1.2.3"
   },
   "devDependencies": {
     "fmt": "0.4.x",
@@ -21,25 +23,10 @@
   "scripts": {
     "test": "set -e; find test/ -name '*.js' -exec echo --- {} --- ';' -exec node {} ';'"
   },
-  "homepage": "https://github.com/awssum/awssum-amazon-s3/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/andruschka/awssum-riakcs.git"
+    "url": "https://github.com/andruschka/awssum-riakcs.git"
   },
-  "bugs": {
-    "url": "http://github.com/awssum/awssum-riakcs/issues"
-  },
-  "author": {
-    "name": "andruschka",
-    "url":"github.com/andruschka"
-  },
-  "contributors": [],
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/awssum/awssum-amazon-s3/raw/master/LICENSE"
-    }
-  ],
   "keywords": [
     "awssum",
     "awssum-plugin",
@@ -49,5 +36,11 @@
     "webapi",
     "api",
     "s3"
-  ]
+  ],
+  "author": "andruschka <fritz.andrej@yahoo.de> (http://github.com/andruschka)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andruschka/awssum-riakcs/issues"
+  },
+  "homepage": "https://github.com/andruschka/awssum-riakcs"
 }
