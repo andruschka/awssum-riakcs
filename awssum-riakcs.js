@@ -102,7 +102,6 @@ var S3 = function(opts, hurl) {
         throw MARK + "invalid region '" + opts.region + "'";
     }
 
-    console.log(self);
     return self;
 };
 
@@ -115,7 +114,7 @@ util.inherits(S3, amazon.Amazon);
 S3.prototype.host = function() {
   if (this.hostUrl) {
     return this.hostUrl;
-  } else {    
+  } else {
     return endPoint[this.region()];
   }
 };

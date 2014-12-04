@@ -13,18 +13,20 @@ dependencies. Both [awssum](https://github.com/awssum/awssum/) and
 Init riakCS and list all your buckets:
 
 ```
-var fmt = require('fmt');
-var amazonS3 = require('awssum-riakcs');
+var RiakCS = require('awssum-riakcs');
 
-var riakCS = new amazonS3.S3({
+var riakCS = new RiakCS.S3({
     'accessKeyId'     : process.env.ACCESS_KEY_ID,
     'secretAccessKey' : process.env.SECRET_ACCESS_KEY,
-    'region'          : amazonS3.US_EAST_1
-}, 'riakcs.url.com');
+    'region'          : RiakCS.US_EAST_1
+}, 'your-riakcs-url.com');
 
 riakCS.ListBuckets(function(err, data) {
-    fmt.dump(err, 'err');
-    fmt.dump(data, 'data');
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(data);
+    }
 });
 ```
 ## Example  with amazon s3 ##
@@ -32,7 +34,6 @@ riakCS.ListBuckets(function(err, data) {
 Init s3 and list all your buckets:
 
 ```
-var fmt = require('fmt');
 var amazonS3 = require('awssum-riakcs');
 
 var s3 = new amazonS3.S3({
@@ -42,7 +43,10 @@ var s3 = new amazonS3.S3({
 });
 
 s3.ListBuckets(function(err, data) {
-    fmt.dump(err, 'err');
-    fmt.dump(data, 'data');
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(data);
+  }
 });
 ```
